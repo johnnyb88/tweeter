@@ -1,0 +1,25 @@
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  position: fixed;
+  height: 120px;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background-color: #4056A1;
+  color: #FFFFFF
+}
+
+nav span {
+  font-family: 'Bungee', sans-serif;
+  margin: 1.5em;
+}
+
+nav p {
+  font-family: sans-serif;
+  margin: 1.5em;
+}

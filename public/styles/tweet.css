@@ -1,0 +1,57 @@
+article  {
+  padding: 10px;
+  margin: 0 2em;
+  border: 4px solid rgb(36, 35, 35);
+  border-radius: 8px;
+  margin-top: 4em;
+  opacity: .8;
+}
+
+article header.tweetHeader {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  height: 25%;
+  width: 25%;
+  background-color: #eee;
+  padding: 10px;
+  margin: 0;
+  border-radius: 8px 8px 0px 0px
+} 
+
+
+article header.tweetHeader img.profile {
+  width: 75%;
+  height: auto;
+  background-color: transparent;
+  
+}
+
+article header.tweetHeader h2 {
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 50px;
+  opacity: .8;
+}
+
+article header h4.tagName {
+  margin: 0;
+  padding-left: 375px;
+  opacity: .2;
+}
+
+article p {
+  border-bottom: 4px solid rgb(36, 35, 35);
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+article footer p1 {
+  padding: 2px;
+}
+
+article:hover {
+  color: black;
+  opacity: 1;
+  box-shadow: 0 0 5px 2px #d99e35;
+} 

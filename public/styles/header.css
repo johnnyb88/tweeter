@@ -1,0 +1,21 @@
+header.pageHeader {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  top: 120px;
+  background-color: #d99e34;
+  background-image: url(../images/asfalt-light.png);
+}
+
+.image {
+  margin: auto;
+  width: 256px;
+  
+}
+
+header h2 {
+  text-align: center;
+}

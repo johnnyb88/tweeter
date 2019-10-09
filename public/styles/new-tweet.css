@@ -1,0 +1,51 @@
+.new-tweet {
+  margin: 0 2em;
+  padding: 10px;
+} 
+
+.new-tweet textarea {
+  color: black;
+  width: 100%;
+  padding: 1px;  
+  background-color: transparent;
+  border-bottom-width: 1mm;
+  border-left: transparent;
+  border-top: transparent;
+  border-right: transparent;
+}
+
+.new-tweet span.counter {
+  font-family: 'Bungee', sans-serif;
+  float: right;
+}
+
+ .new-tweet button {
+  float: left;
+  font-family: 'Bungee', sans-serif;
+  background-color: #4152a1;
+  color: white;
+  
+}
+
+.new-tweet .overtext {
+  color: red;
+}
+
+.new-tweet div {
+  color: red
+}
+
+
+.new-tweet h2 {
+  border-bottom: 1px; color: black;
+  margin-top: 2px;
+  
+}
+
+div.icons {
+  float: right;
+}
+
+
+
+
