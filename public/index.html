@@ -7,25 +7,73 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
 
+    <!-- imbedded font styles -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,700,700i&display=swap" rel="stylesheet">
+
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-
+     <!-- navigation CSS -->
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+     <!-- header CSS -->
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+    <!-- character counter js -->
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
   </head>
 
   <body>
-
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>tweeter</span>
+      <p>Write a new tweet</p>
     </nav>
 
+    <header class="pageHeader">
+      <div class="image">
+          <img src="/images/profile-hex.png"> 
+          <!-- <img src="/images/troymcclure.png"> -->
+      </div>
+      <div>
+          <h2>Troy mcClure</h2>
+      </div>
+  </header>
+    
     <!-- Page-specific (main) content here -->
     <main class="container">
+        <section class="new-tweet">
+            <h2>Compose Tweet</h2>
+            <form id="tweetForm" action="tweets" method="POST">
+              <textarea id="tweetPost" rows="1" name="text" placeholder="What are you humming about?"></textarea>
+              <p1>
+                <button type="submit" value="Tweet">Tweet</button>
+              </p1>
+              <span class="counter">140</span>
+            </form>
+          </section>
+          <section class="tweets-container">
+              <article>
+                <header class="tweetHeader"><img class= "profile" src="/images/profile-hex.png"><h3>Troy</h3>
+                  <h4 class="tagName">@McClure</h4>
+                </header>
+                <p>little tweet here</p>
+                <footer>
+                  <p1>10 days ago</p1>
+                  <div class="icons">
+                  <i class="fa fa-flag"></i>
+                   <i class="fa fa-heart"></i>
+                     <i class="fa fa-refresh"></i>
+                  </div>
+                </footer>
+              </article>
+          </section>
     </main>
 
   </body>
