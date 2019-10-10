@@ -103,6 +103,7 @@ article:hover header h4.tagName {
     height: 20vh;
     margin-top: 40px;
     margin-left: 40px;
+    border-radius: 8px;
     
   }
   

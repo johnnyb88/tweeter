@@ -54,6 +54,7 @@ nav p {
 }
 @media only screen and (min-width: 768px)  {
   nav {
-    background-color: #4056A1;
+    background-color: #6689A1;
+    box-shadow: 1px 4px 10px grey;
   }
   }
