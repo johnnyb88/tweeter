@@ -15,6 +15,8 @@ html {
  */
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   color: #545149;
   background-color: #f4f1ec;
@@ -25,10 +27,21 @@ body {
 main {
   width: 90%;
   background-color: #f4f1ec;
-  padding-top: 550px;
-  margin: auto;
+  padding-top: 50%;
+  
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+ /* main.container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+} */
+ 

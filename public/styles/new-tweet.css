@@ -1,6 +1,7 @@
 .new-tweet {
-  margin: 0 2em;
+  margin: 2em;
   padding: 10px;
+  padding-bottom: 0;
   display: none;
 } 
 

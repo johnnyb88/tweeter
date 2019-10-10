@@ -25,7 +25,7 @@
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
     <script type="text/javascript" src="/scripts/app.js"></script>
-    
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
   </head>
 
   <body>
@@ -37,19 +37,15 @@
       <button class="sliderBtn"><img src="/images/arrow.png"></button>
       </p>
     </nav>
-
+    <div class="displayChange">
     <header class="pageHeader">
-      <div class="image">
-          <img src="/images/profile-hex.png"> 
-          <!-- <img src="/images/troymcclure.png"> -->
-      </div>
-      <div>
-          <h2>Troy mcClure</h2>
-      </div>
+      <img class="image" src="/images/profile-hex.png">
+      <p>Troy mcClure</p>
+      
   </header>
     
     <!-- Page-specific (main) content here -->
-    <main class="container">
+    <main class="container2">
         <section class="new-tweet">
             <h2>Compose Tweet</h2>
             <label class="errorMessage">error here</label>
@@ -79,5 +75,6 @@
               </article>
           </section>
     </main>
+    </div>
   </body>
 </html>
