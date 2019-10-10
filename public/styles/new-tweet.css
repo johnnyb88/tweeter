@@ -1,6 +1,7 @@
 .new-tweet {
   margin: 0 2em;
   padding: 10px;
+  display: none;
 } 
 
 .new-tweet textarea {
@@ -46,6 +47,14 @@ div.icons {
   float: right;
 }
 
+.errorMessage {
+  color: #D8000C;
+  background-color: #FFBABA;
+  display: none;
+}
 
+.errorDisplay {
+  display: unset;
+}
 
 

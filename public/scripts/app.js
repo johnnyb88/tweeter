@@ -22,22 +22,27 @@ $(document).ready(() => {
     console.log('Button clicked, performing ajax call...');
 
     let tweetPost = $("#tweetPost");
-    let tweetData = $("tweetForm").serialize();
 
     if (tweetPost.val().length === 0) {
-      alert("Cannot post empty field");
+      $(".errorMessage").text("Error! You cannot post an empty field.").slideDown("slow").addClass(".errorDisplay");
     } else if (tweetPost.val().length > 140) {
-      alert("140 character limit, Please edit your post.");
+      $(".errorMessage").text("Error! You've reached your character limit.").slideDown('slow').addClass(".errorDisplay");
     } else {
-
+      $(".errorMessage").slideUp('fast').removeClass('.errorDisplay');
       $.ajax({ url: '/tweets', method: 'POST', data: $(this).serialize()  })
         .then(function (newTweet) {
+          tweetPost.val("");
           $('.tweets-container').empty();
           loadTweets(newTweet);
         });
     }
   });
   
+  //----slide new tweet toggle ----//
+  $(".sliderBtn").click(function() {
+    $(".new-tweet").slideToggle();
+    $("#tweetPost").focus();
+  });
   
 
   const renderTweets = function(tweets) {
@@ -56,7 +61,7 @@ $(document).ready(() => {
 
   const createTweetElement = function(tweet) {
     return ` <article>
-  <header class="tweetHeader"><img class= "profile" src="${escape(tweet.user.avatars)}"><h3>${tweet.user.name}</h3>
+  <header class="tweetHeader"><img class= "profile" src="${escape(tweet.user.avatars)}"><h3>${escape(tweet.user.name)}</h3>
     <h4 class="tagName">${escape(tweet.user.handle)}</h4>
   </header>
   <p>${escape(tweet.content.text)}</p>

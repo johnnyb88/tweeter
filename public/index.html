@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <!-- imbedded font styles -->
     <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,700,700i&display=swap" rel="stylesheet">
 
@@ -33,7 +32,10 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>tweeter</span>
-      <p>Write a new tweet</p>
+      <p>
+        Write a new tweet
+      <button class="sliderBtn"><img src="/images/arrow.png"></button>
+      </p>
     </nav>
 
     <header class="pageHeader">
@@ -50,6 +52,8 @@
     <main class="container">
         <section class="new-tweet">
             <h2>Compose Tweet</h2>
+            <label class="errorMessage">error here</label>
+            
             <form id="tweetForm" action="tweets" method="POST">
               <textarea id="tweetPost" rows="1" name="text" placeholder="What are you humming about?"></textarea>
               <p1>
