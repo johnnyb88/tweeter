@@ -1,3 +1,9 @@
+main.container2 {
+  margin-top: 80px;
+  padding-top: 20px;
+}
+
+
 article  {
   padding: 10px;
   margin: 0 2em;
@@ -36,7 +42,7 @@ article header.tweetHeader h2 {
 
 article header h4.tagName {
   position: relative;
-  left: 220%;
+  left: 200%;
   margin: auto;
   opacity: 0;
 }
@@ -78,7 +84,7 @@ article:hover header h4.tagName {
 
 @media  only screen  and (max-width: 768px) {
   article header h4.tagName {
-    left: 140%;
+    left: 120%;
   }
   
   article footer .icons {
