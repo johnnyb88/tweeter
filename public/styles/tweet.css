@@ -98,13 +98,15 @@ article:hover header h4.tagName {
     flex-direction: row;
     /* justify-content: center; */
   }
+
+  
   header.pageHeader {
     width: 30%;
     height: 20vh;
     margin-top: 40px;
     margin-left: 40px;
     border-radius: 8px;
-    
+    box-shadow: 1px 4px 10px grey;
   }
   
   .container2 {
@@ -114,16 +116,5 @@ article:hover header h4.tagName {
   
   }
 }
-/* Tablet Styles */
-/* @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .header.pageHeader {
-    width: 33.3%;
-    line-height: 600px;
-  }
-  
-  .container {
-    width: 66.7%;
-    float: right
-  }
-} */
+
 

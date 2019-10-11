@@ -9,3 +9,4 @@ $(document).ready(function() {
     }
   });
 });
+//----- counts characters in the text area -----//
