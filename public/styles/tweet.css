@@ -66,6 +66,9 @@ article footer p1 {
   padding: 2px;
 }
 
+article div.icons {
+  opacity: 0;
+}
 
 article:hover {
   color: black;
@@ -74,6 +77,10 @@ article:hover {
 } 
 
 article:hover header h4.tagName {
+  opacity: .4;
+}
+
+article:hover div.icons {
   opacity: .4;
 }
 
@@ -89,6 +96,7 @@ article:hover header h4.tagName {
   
   article footer .icons {
     left: 140%;
+    
   }
 }
 
@@ -99,7 +107,7 @@ article:hover header h4.tagName {
     /* justify-content: center; */
   }
 
-  
+
   header.pageHeader {
     width: 30%;
     height: 20vh;
